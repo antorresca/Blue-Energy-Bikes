@@ -8,4 +8,4 @@
 
 ## Modulos
 
-1. [Automatización e Industria](Automatizacion_industria)
+1. [Automatización e Industria](Automatizacion_Industria)
