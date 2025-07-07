@@ -6,6 +6,7 @@
 **Estación a Robotizar:** Chasis
 
 **Entrada:** Chasis pintado sin soportes.
+
 **Salida:** Chasis limpio y listo para ensamblaje.
 
 Su función principal es preparar el esqueleto estructural de la moto, sobre el cual se montarán los demás componentes.
