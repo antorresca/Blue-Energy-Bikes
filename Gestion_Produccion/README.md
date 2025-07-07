@@ -51,7 +51,7 @@ Al realizar la simulación con un tiempo de 1 semana (7 dias=604800segundos) se 
   <img src='https://github.com/natc27/Blue-energy-landing/blob/main/Multimedia/Grafica_plantaActual.png' width=400>
 </div>
 
-Una vez realizada la simulación, se calculó el OEE con el siguiente código de _simTalk_
+Una vez realizada la simulación, se calculó el OEE con un código de _simTalk_ ([OEE_Inicial.txt](Archivos/OEE_Inicial.txt)). Un fragmento se puede observar
 
 ```simtalk
 var tiempo = eventController.end
@@ -161,7 +161,7 @@ Con estas configuraciones, se realizó la simulación con un tiempo de 1 semana 
   <img src='https://github.com/natc27/Blue-energy-landing/blob/main/Multimedia/Grafica_plantapropuesta.png' width=400>
 </div>
 
-Al emplear el codigo de SimTalk descrito en la sección [Planta Inicial](#planta-inicial) se obtuvieron los siguientes datos
+Al emplear el codigo de SimTalk descrito en la sección [Planta Inicial](#planta-inicial) (([OEE_Propuesta.txt](Archivos/OEE_Propuesta.txt)) se obtuvieron los siguientes datos
 
 <div align='center'>
 <table><thead><tr><th>Tiempo simulado</th><th>7 dias</th></tr></thead><tbody><tr><td>Unidades ideales</td><td>38</td></tr><tr><td>Piezas Hechas</td><td>34</td></tr><tr><td>Fallas</td><td>4</td></tr><tr><td>Disponibilidad</td><td>84.567%</td></tr><tr><td>Rendimiento</td><td>88.71%</td></tr><tr><td>Calidad</td><td>88.235%</td></tr><tr><td>OEE</td><td>66.194%</td></tr></tbody></table>
