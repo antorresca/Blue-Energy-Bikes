@@ -1,0 +1,12 @@
+var tiempo = eventController.end
+
+var total_time = chasis.statWorkingTime+baterias.statWorkingTime+motor.statWorkingTime+llantas.statWorkingTime+frenos.statWorkingTime+manillar.statWorkingTime+luces.statWorkingTime+ensamble.statWorkingTime+asiento.statWorkingTime
+var proc_time =  chasis.procTime+baterias.procTime+motor.procTime+llantas.procTime+frenos.procTime+manillar.procTime+luces.procTime+ensamble.procTime+asiento.procTime
+
+var unidades_ideal = tiempo/proc_time
+
+var dispo := total_time / tiempo
+var rend := total / unidades_ideal
+var cal := (total-fallas) / total
+
+var oee := dispo*rend*cal*100
