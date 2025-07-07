@@ -22,9 +22,11 @@ alli se tienen las siguientes estaciones:
 
 Como se puede observar, el proceso de fabricación es lineal. Para la simulación se asignaron los siguientes valores a cada estacion:
 
-<div class="card" align='center'>
-<table><thead><tr><th>Estación</th><th>Tiempo de Proceso (MM:SS)</th><th>Falla (Duración,Disponibilidad)</th><th>Set-Up</th><th>Recovery Time</th></tr></thead><tbody><tr><td>Chasis</td><td>30:00</td><td>2:00, 88%</td><td>2:00</td><td>Lognorm(1:40,0:10)</td></tr><tr><td>Baterías</td><td>30:00</td><td>Uniform(2:00,3:00), 98.324%</td><td>1:00</td><td>5:00</td></tr><tr><td>Motor</td><td>30:00</td><td>2:00,98.654%</td><td>Lognorm(2:00,0:10)</td><td>5:00</td></tr><tr><td>Llantas</td><td>25:00</td><td>2:00, 98.654%</td><td>2:00</td><td>5:00</td></tr><tr><td>Frenos</td><td>30:00</td><td>2:00, 98.654%</td><td>2:00</td><td>Uniform(0:01,5:01)</td></tr><tr><td>Manillar</td><td>30:00</td><td>Uniform(2:00,10:00), 96.069%</td><td>2:00</td><td>5:00</td></tr><tr><td>Luces y cableado</td><td>30:00</td><td>2:00, 98.654%</td><td>2:00</td><td>Uniform(10:00,10:00)</td></tr><tr><td>Ensamble eléctrico</td><td>30:00</td><td>Normal(20:00,0:01), 88%</td><td>2:00</td><td>Erlang(1:00,20:00)</td></tr>
-<tr><td>Asiento y detalles</td><td>30:00</td><td>30:00,83.018%</td><td>2:00</td><td>5:00</td></tr></tbody></table>
+<div align='center'>
+  <table><thead><tr><th>Estacion</th><th>Tiempo de proceso</th><th>Tiempo de set-up</th><th>Falla</th><th>Distribución</th><th>Tiempo de reparación</th></tr></thead><tbody><tr><td rowspan="4">chasis</td><td rowspan="4">65:00</td><td rowspan="4">5:00</td><td>alineacion_deficiente</td><td>Negexp(1200)</td><td>10:00</td></tr><tr><td>herramienta_danada</td><td>Negexp(1500)</td><td>9:00</td></tr><tr><td>pieza_mal_colocada</td><td>Negexp(1800)</td><td>8:00</td></tr><tr><td>error_de_medicion</td><td>Negexp(2100)</td><td>10:00</td></tr><tr><td rowspan="4">baterias</td><td rowspan="4">85:00</td><td rowspan="4">4:00</td><td>fuga_electrolito</td><td>Negexp(2400)</td><td>12:00</td></tr><tr><td>error_polaridad</td><td>Negexp(3000)</td><td>10:00</td></tr><tr><td>celdas_danadas</td><td>LogNorm(1800,600)</td><td>12:00</td></tr><tr><td>conexion_deficiente</td><td>Negexp(2700)</td><td>9:00</td></tr>
+<tr><td rowspan="4">motor</td><td rowspan="4">95:00</td><td rowspan="4">6:00</td><td>desalineacion_eje</td><td>Negexp(1800)</td><td>10:00</td></tr><tr><td>fallo_ensamble</td><td>LogNorm(1500,450)</td><td>9:00</td></tr><tr><td>calibracion_incorrecta</td><td>Negexp(2400)</td><td>10:00</td></tr><tr><td>daño_en_carcasa</td><td>Negexp(3000)</td><td>12:00</td></tr><tr><td rowspan="3">llantas</td><td rowspan="3">75:00</td><td rowspan="3">4:00</td><td>llanta_deformada</td><td>Negexp(1800)</td><td>10:00</td></tr><tr><td>error_balanceo</td><td>Negexp(2100)</td><td>9:00</td></tr><tr><td>fijacion_incorrecta</td><td>LogNorm(1600,400)</td><td>10:00</td></tr><tr><td rowspan="3">frenos</td><td rowspan="3">80:00</td><td rowspan="3">5:00</td><td>fuga_hidraulica</td><td>Negexp(2400)</td><td>12:00</td></tr><tr><td>error_purga</td><td>Negexp(1800)</td><td>9:00</td></tr><tr><td>sensor_frenos</td><td>LogNorm(1500,400)</td><td>10:00</td></tr>
+<tr><td rowspan="3">manillar</td><td rowspan="3">78:00</td><td rowspan="3">3:00</td><td>torque_inadecuado</td><td>Negexp(1500)</td><td>8:00</td></tr><tr><td>manillar_desviado</td><td>Negexp(1800)</td><td>10:00</td></tr><tr><td>pieza_incompleta</td><td>LogNorm(1200,350)</td><td>10:00</td></tr><tr><td rowspan="3">luces</td><td rowspan="3">90:00</td><td rowspan="3">4:00</td><td>corto_luces</td><td>Negexp(2400)</td><td>12:00</td></tr><tr><td>conexion_defectuosa</td><td>Negexp(2100)</td><td>10:00</td></tr><tr><td>direccion_mal_marcada</td><td>LogNorm(1800,500)</td><td>9:00</td></tr><tr><td rowspan="3">ensamble</td><td rowspan="3">105:00</td><td rowspan="3">6:00</td><td>pieza_olvidada</td><td>Negexp(3000)</td><td>12:00</td></tr><tr><td>fallo_estructura</td><td>LogNorm(2000,600)</td><td>10:00</td></tr><tr><td>ajuste_incompleto</td><td>Negexp(2400)</td><td>9:00</td></tr>
+<tr><td rowspan="3">asiento</td><td rowspan="3">60:00</td><td rowspan="3">4:00</td><td>fijacion_incompleta</td><td>Negexp(1800)</td><td>10:00</td></tr><tr><td>tapizado_defectuoso</td><td>Negexp(2100)</td><td>9:00</td></tr><tr><td>estructura_dañada</td><td>LogNorm(1600,400)</td><td>12:00</td></tr></tbody></table>
 </div>
 
 Además de esto, se consideraron 15 trabajadores con un único horario de trabajo de 7:00 a 16:00 con un descanso de 12:00 a 13:00 de lunes a viernes y descanso sabado y domingo. Al realizar l realizar la simulación con un tiempo de 1 semana (7 dias) se obtuvo la siguiente gráfica:
@@ -32,6 +34,17 @@ Además de esto, se consideraron 15 trabajadores con un único horario de trabaj
 <div align='center'>
   <img src='https://github.com/natc27/Blue-energy-landing/blob/main/Multimedia/Grafica_plantaActual.png' width=400>
 </div>
+
+Resultados
+
+disponibilidad (%)
+73.3636246297819
+rendimiento (%)
+72.718253968254
+calidad (%)
+40
+el oee es de (%)
+21.3394987514405
 
 ### Planta propuesta
 
@@ -76,6 +89,6 @@ Con ello se obtuvo los siguientes datos
 </div>
 
 <div align='center'>
-  <img src='https://github.com/user-attachments/assets/25b06e82-713f-4d63-87f9-bd27cac82104' width=400>
+  <img src='https://github.com/natc27/Blue-energy-landing/blob/main/Multimedia/Grafica_plantapropuesta.png' width=400>
 </div>
 
