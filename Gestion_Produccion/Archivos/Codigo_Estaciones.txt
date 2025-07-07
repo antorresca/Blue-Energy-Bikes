@@ -1,0 +1,100 @@
+//Tiempos
+marcado.procTime.setTypeAndAttr("Const","8:00")
+chasis.procTime.setTypeAndAttr("Const","20:00")
+bateria.procTime.setTypeAndAttr("Const","35:00")
+manillar_llantas.procTime.setTypeAndAttr("Const","45:00")
+motor.procTime.setTypeAndAttr("Const","40:00")
+frenos_suspension.procTime.setTypeAndAttr("Const","35:00")
+luces_cableado.procTime.setTypeAndAttr("Const","40:00")
+porta_placa.procTime.setTypeAndAttr("Const","5:00")
+asiento_detalles.procTime.setTypeAndAttr("Const","60:00")
+inspeccion.procTime.setTypeAndAttr("Const","20:00")
+
+marcado.setupTime.setTypeAndAttr("Const","3:00")
+chasis.setupTime.setTypeAndAttr("Const","6:00")
+bateria.setupTime.setTypeAndAttr("Const","4:00")
+manillar_llantas.setupTime.setTypeAndAttr("Const","5:00")
+motor.setupTime.setTypeAndAttr("Const","4:00")
+frenos_suspension.setupTime.setTypeAndAttr("Const","5:00")
+luces_cableado.setupTime.setTypeAndAttr("Const","4:00")
+porta_placa.setupTime.setTypeAndAttr("Const","2:00")
+asiento_detalles.setupTime.setTypeAndAttr("Const","6:00")
+inspeccion.setupTime.setTypeAndAttr("Const","3:00")
+
+marcado.setupAfterNumParts := 2
+chasis.setupAfterNumParts := 2
+bateria.setupAfterNumParts := 2
+manillar_llantas.setupAfterNumParts := 2
+motor.setupAfterNumParts := 2
+frenos_suspension.setupAfterNumParts := 2
+luces_cableado.setupAfterNumParts := 2
+porta_placa.setupAfterNumParts := 2
+asiento_detalles.setupAfterNumParts := 2
+inspeccion.setupAfterNumParts := 2
+
+marcado.ShiftCalendarObject := ShiftCalendar
+chasis.ShiftCalendarObject := ShiftCalendar
+bateria.ShiftCalendarObject := ShiftCalendar
+manillar_llantas.ShiftCalendarObject := ShiftCalendar
+motor.ShiftCalendarObject := ShiftCalendar
+frenos_suspension.ShiftCalendarObject := ShiftCalendar
+luces_cableado.ShiftCalendarObject := ShiftCalendar
+porta_placa.ShiftCalendarObject := ShiftCalendar
+asiento_detalles.ShiftCalendarObject := ShiftCalendar
+inspeccion.ShiftCalendarObject := ShiftCalendar
+
+//Fallas
+marcado.Failures.createFailure("desalineacion_marcado","Negexp,1080","Const,180")
+marcado.Failures.createFailure("error_marcado","Negexp,1440","Const,240")
+marcado.Failures.createFailure("fallo_lectura","Negexp,2160","Const,480")
+marcado.Failures.createFailure("contaminacion_chasis","Negexp,2160","Const,360")
+marcado.Failures.createFailure("error_datos","Negexp,3600","Const,600")
+
+chasis.Failures.createFailure("desalineacion_estacion","Negexp,1200","Const,180")
+chasis.Failures.createFailure("fallo_sujecion","Negexp,1500","Const,240")
+chasis.Failures.createFailure("error_robot","Negexp,1800","Const,300")
+chasis.Failures.createFailure("defecto_soldadura","Negexp,2400","Const,420")
+chasis.Failures.createFailure("fallo_vision","Negexp,3600","Const,600")
+
+bateria.Failures.createFailure("desalineacion_caja","Negexp,18000","Const,540")
+bateria.Failures.createFailure("tornillos_sueltos","Negexp,24000","Const,720")
+bateria.Failures.createFailure("conexion_bateria","Negexp,36000","Const,600")
+bateria.Failures.createFailure("polaridad_invertida","Negexp,54000","Const,900")
+bateria.Failures.createFailure("fijacion_cableado","LogNorm,600,200","Const,720")
+
+manillar_llantas.Failures.createFailure("desalineacion_manillar","Negexp,1080","Const,180")
+manillar_llantas.Failures.createFailure("torque_incorrecto","Negexp,1440","Const,300")
+manillar_llantas.Failures.createFailure("fallo_conexion","Negexp,1800","Const,420")
+manillar_llantas.Failures.createFailure("defecto_llantas","Negexp,2160","Const,360")
+manillar_llantas.Failures.createFailure("error_documentacion","Negexp,3600","Const,600")
+
+motor.Failures.createFailure("fallo_herramienta","LogNorm,1080,240","Const,720")
+motor.Failures.createFailure("fallo_electrico","Negexp,43200","Const,1500")
+motor.Failures.createFailure("fallo_alineacion","Negexp,28800","Const,900")
+
+frenos_suspension.Failures.createFailure("colocacion_mordazas","Negexp,1200","Const,300")
+frenos_suspension.Failures.createFailure("cableado_defectuoso","Negexp,1500","Const,240")
+frenos_suspension.Failures.createFailure("fuga_hidraulica","Negexp,2400","Const,480")
+frenos_suspension.Failures.createFailure("alineacion_suspension","Negexp,1800","Const,360")
+frenos_suspension.Failures.createFailure("daño_estructural","Negexp,7200","Const,900")
+
+luces_cableado.Failures.createFailure("corto_sistema","Negexp,36000","Const,600")
+luces_cableado.Failures.createFailure("mal_enrutamiento","LogNorm,960,240","Const,600")
+luces_cableado.Failures.createFailure("fallo_verificacion","Negexp,54000","Const,900")
+
+porta_placa.Failures.createFailure("fijacion_lamina","Negexp,1440","Const,240")
+porta_placa.Failures.createFailure("configuracion_motor","Negexp,1800","Const,300")
+porta_placa.Failures.createFailure("lente_sucia","Negexp,3000","Const,600")
+porta_placa.Failures.createFailure("material_defectuoso","Negexp,2400","Const,240")
+porta_placa.Failures.createFailure("error_cad","Negexp,4800","Const,900")
+
+asiento_detalles.Failures.createFailure("adhesivo_mal","Negexp,30000","Const,240")
+asiento_detalles.Failures.createFailure("carcasa_mal","Negexp,36000","Const,600")
+asiento_detalles.Failures.createFailure("pieza_defectuosa","Negexp,72000","Const,480")
+asiento_detalles.Failures.createFailure("daño_superficial","LogNorm,600,200","Const,900")
+
+inspeccion.Failures.createFailure("fallo_mecanico","Negexp,1080","Const,300")
+inspeccion.Failures.createFailure("fallo_electrico_basico","Negexp,1440","Const,240")
+inspeccion.Failures.createFailure("bateria_suelta","Negexp,2160","Const,360")
+inspeccion.Failures.createFailure("daño_cosmetico","Negexp,2880","Const,600")
+inspeccion.Failures.createFailure("problema_grave","Negexp,7200","Const,1200")
