@@ -1,19 +1,39 @@
 # Módulo 2: Gestión de Producción
-## Descripción
 
-## Plant Simulation
+## 1. Análisis Pre-Automatización y VSM
 
-Para revisar cuestiones de mejora en la linea de producción, se realizó la simulacion de la planta inicial y de la planta propuesta en el programa _Plant Simulation_ para facilitar las variaciones que se quieran realizar y realizar el proceso de iteraciones.
+Antes de implementar mejoras y automatización, se realizó un análisis del estado actual de la planta utilizando herramientas de mapeo de valor (VSM), lo que permite identificar cuellos de botella, desperdicios y oportunidades de mejora.
 
-### Planta inicial
-En la planta inicial (es decir, el estado actual) se tiene el siguiente modelo CAD de simulación y el layout correspondiente:
+### 1.1 VSM Planta Actual
+
+<div align='center'>
+  <img src='https://github.com/natc27/Blue-energy-landing/blob/main/Multimedia/VSM_actual.png' width=700>
+</div>
+
+### 1.2 VSM Planta Propuesta
+
+<div align='center'>
+  <img src='https://github.com/natc27/Blue-energy-landing/blob/main/Multimedia/VSM_propuesta.png' width=700>
+</div>
+
+## 2. Simulación de Planta: Evaluación de Producción y OEE
+
+Se utilizó _Plant Simulation_ para modelar, analizar y optimizar las operaciones tanto en el estado actual como en el estado propuesto. Se consideraron aspectos como tiempos de producción, tiempos de set-up, fallas, colas y se calculó el OEE.
+
+---
+
+## 2.1 Simulación de la Planta Actual
+
+### Modelo y Layout
+
+Se tiene el siguiente modelo CAD de simulación y el layout correspondiente:
 
 <div align="center">
   <img src="https://raw.githubusercontent.com/natc27/Blue-energy-landing/main/Multimedia/Simulacion_Plant.png" width="400" style="display:inline-block; margin-right: 10px;">
   <img src="https://raw.githubusercontent.com/natc27/Blue-energy-landing/main/Multimedia/Layout_Planta_Actual.png" width="400" style="display:inline-block;">
 </div>
 
-En esta simulacion inicail se tienen las siguientes estaciones:
+### Estaciones y Funciones
 
 <div align='center'>
   <table border="1">
@@ -30,6 +50,8 @@ En esta simulacion inicail se tienen las siguientes estaciones:
 </table>
 </div>
 
+### Parámetros de Simulación (Fallas, Tiempos, Reparaciones)
+
 Una vez definidas las estaciones se realizaron las configuraciones necesarias como el tiempo de preparación, el tiempo de proceso, las fallas (probabilidad de ocurrencia y duración) entre otras; los datos asignados a cada estación se pueden ver en la siguiente tabla:
 
 <div align='center'>
@@ -39,17 +61,23 @@ Una vez definidas las estaciones se realizaron las configuraciones necesarias co
 <tr><td rowspan="3">asiento</td><td rowspan="3">60:00</td><td rowspan="3">4:00</td><td>fijacion_incompleta</td><td>Negexp(1800)</td><td>10:00</td></tr><tr><td>tapizado_defectuoso</td><td>Negexp(2100)</td><td>9:00</td></tr><tr><td>estructura_dañada</td><td>LogNorm(1600,400)</td><td>12:00</td></tr></tbody></table>
 </div>
 
+### Jornada Laboral y Personal
+
 Por otro lado, se consideró la siguiente informacion sobre los trabajadores
 
 * Número de trabajadores: 15.
 * Horario de trabajo: de 7:00am a 4:00pm con un descanso de 12:00pm a 1:00pm.
 * Dias laborales: lunes a viernes y descanso sabado y domingo.
 
+### Resultados de Simulación
+
 Al realizar la simulación con un tiempo de 1 semana (7 dias=604800segundos) se obtuvo la siguiente gráfica:
 
 <div align='center'>
   <img src='https://github.com/natc27/Blue-energy-landing/blob/main/Multimedia/Grafica_plantaActual.png' width=400>
 </div>
+
+### Calculo de OEE
 
 Una vez realizada la simulación, se calculó el OEE con un código de _simTalk_ ([OEE_Inicial.txt](Archivos/OEE_Inicial.txt)). Un fragmento se puede observar
 
@@ -74,17 +102,18 @@ Dando
 <table><thead><tr><th>Tiempo simulado</th><th>7 dias</th></tr></thead><tbody><tr><td>Unidades ideales</td><td>14</td></tr><tr><td>Piezas Hechas</td><td>10</td></tr><tr><td>Fallas</td><td>6</td></tr><tr><td>Disponibilidad</td><td>73.363%</td></tr><tr><td>Rendimiento</td><td>72.71%</td></tr><tr><td>Calidad</td><td>40%</td></tr><tr><td>OEE</td><td>21.339%</td></tr></tbody></table>
 </div>
 
+## 2.2 Simulación de la Planta Propuesta
 
-### Planta propuesta
+### Modelo y Layout
 
-Para la planta propuesta, se creó el siguiente modelo CAD de simulación con su correspondiente Layout
+Se creó el siguiente modelo CAD de simulación con su correspondiente Layout
 
 <div align="center">
   <img src="https://github.com/natc27/Blue-energy-landing/blob/main/Multimedia/Simulacion_Plant_Propuesta.png" width="500" style="display:inline-block; margin-right: 10px;">
   <img src="https://github.com/natc27/Blue-energy-landing/blob/main/Multimedia/Layout_Planta_Propuesta_1.png" width="500" style="display:inline-block;">
 </div>
 
-Las estaciones son:
+### Estaciones y Funciones
 
 <div align='center'>
   <table border="1">
@@ -101,6 +130,8 @@ Las estaciones son:
   <tr><td>Inspección</td><td>Revisión final y control de calidad.</td></tr>
 </table>
 </div>
+
+### Parámetros de Simulación (Fallas, Tiempos, Reparaciones)
 
 Se usaron los siguientes datos para cada una de las estaciones
 
@@ -129,6 +160,8 @@ marcado.Failures.createFailure("error_datos","Negexp,3600","Const,600")
 ```
 **Nota:** El código está en [Codigo_Estaciones.txt](Archivos/Codigo_Estaciones.txt) (Este código debe ser colocado en un objeto tipo 'metodo' en Plant Simulation para su funcionamiento)
 
+### Jornada Laboral y Personal
+
 Ya con las estaciones definidas se determinó el horario de trabajo de lunes a viernes, con descanso sábado y domingo:
 
 <div align='center'>
@@ -155,11 +188,15 @@ t["Pauses", 2] := "21:00-22:00 00:00-01:00" //Descanso turno 2
 ShiftCalendar.ShiftPlan := t
 ```
 
+### Resultados de Simulación
+
 Con estas configuraciones, se realizó la simulación con un tiempo de 1 semana (7 dias=604800segundos) se obtuvo la siguiente gráfica:
 
 <div align='center'>
   <img src='https://github.com/natc27/Blue-energy-landing/blob/main/Multimedia/Grafica_plantapropuesta.png' width=400>
 </div>
+
+### Calculo de OEE
 
 Al emplear el codigo de SimTalk descrito en la sección [Planta Inicial](#planta-inicial) (([OEE_Propuesta.txt](Archivos/OEE_Propuesta.txt)) se obtuvieron los siguientes datos
 
@@ -168,3 +205,11 @@ Al emplear el codigo de SimTalk descrito en la sección [Planta Inicial](#planta
 </div>
 
 
+<!-- 3. Conexión con Sistemas MES
+La información recopilada desde la simulación puede emplearse como base para un sistema MES, permitiendo:
+
+Monitoreo de KPIs (como OEE) en tiempo real.
+
+Evaluación de paradas, productividad y calidad.
+
+Integración con sistemas ERP y bases de datos industriales. -->
