@@ -189,7 +189,7 @@ La celda está diseñada para el alistamiento de soportes adicionales en el chas
     <tr><td>7</td><td>Caída herramientas</td><td>Revisión del acople y sistemas de sujeción</td><td>Mitigación</td></tr>
     <tr><td>8</td><td>Colapso estructural</td><td>Análisis estructural y pruebas de carga</td><td>Mitigación</td></tr>
     <tr><td>9</td><td>Ruido</td><td>Aislamiento acústico, protectores auditivos</td><td>Mitigación</td></tr>
-    <tr><td>19</td><td>Vibraciones</td><td>MAntenimiento constante y análisis de vibraciones para mantenimiento predictivo.</td><td>Mitigación</td></tr>
+    <tr><td>19</td><td>Vibraciones</td><td>Mantenimiento constante y análisis de vibraciones para mantenimiento predictivo.</td><td>Mitigación</td></tr>
     <tr><td>11</td><td>Acceso no autorizado</td><td>Cerramientos, control de acceso, señalización</td><td>Componente de seguridad</td></tr>
   </tbody>
 </table>
