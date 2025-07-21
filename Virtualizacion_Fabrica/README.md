@@ -24,7 +24,7 @@ Teniendo el modelo de la moto, se buscaron los demás archivos CAD que se encuen
   <img src='https://github.com/natc27/Blue-energy-landing/blob/main/Multimedia/ModeloCAD_Fusion.png'>
 </div>
 
-En la siguiente imagen se puede observar con mayor detalle la estación robotizada (Estación Chasis)
+En la siguiente imagen se puede observar con mayor detalle la estación robotizada (Estación Chasis), los robots empleados se describen en el módulo [Celda Robotizada](https://github.com/antorresca/Blue-Energy-Bikes/tree/main/Celdas_Robotizada)
 
 <div align='center'>
   <img src='https://github.com/natc27/Blue-energy-landing/blob/main/Multimedia/ModeloCAD_Fusion_Detalle.png'>
@@ -38,9 +38,13 @@ Cada estación de la linea de producción tiene actuadores, sensores, banda tran
 
 **Nota:** _por simplicidad, los sensores para la simulación son de presencia y actuadores de tipo motor sin entrar en detalles no requeridos en esta etapa._
 
-
-**Cortadora laser**
+Por otro lado, la estación _Porta Placas_ emplea una cortadora laser:
 
 <div align='center'>
   <img src='https://github.com/natc27/Blue-energy-landing/blob/main/Multimedia/Corte_Laser_CAD.png'>
 </div>
+
+Una vez hecho el ensamble de la linea en _Autodesk Fusion_ se exportó el archivo general en formato STEP para poderlo emplear de la manera adecuada en Siemens NX
+
+## Siemens NX
+
