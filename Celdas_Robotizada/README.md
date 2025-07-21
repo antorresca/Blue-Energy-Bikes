@@ -45,6 +45,11 @@ La celda está diseñada para el alistamiento de soportes adicionales en el chas
   - Proceso dentro de la celda: 11 minutos 
   - Transporte a la siguiente estación: 2 minutos
 
+ - **Normas de seguridad consideradas:**
+   -  *NTC-ISO 12100* Análisis de riesgos en Máquinas
+   - *NTC-ISO 10218* Requisitos de seguridad de robots industriales
+   
+Además de un constante análisis de riesgos, mantenimientos frecuentes para evitar malfuncionamientos o situaciones que pongan en peligro la vida humana en los alrededores de la celda robotizada.
 
 
 ## 4. Elementos de la Celda
@@ -203,9 +208,9 @@ La celda está diseñada para el alistamiento de soportes adicionales en el chas
 </div>
 
 ### Video de simulación
-<video width="600" controls>
-  <source src="https://github.com/natc27/Blue-energy-landing/blob/main/Multimedia/WeldingSim_RobotStudio.mp4" type="video/mp4">
-</video>
+
+https://github.com/user-attachments/assets/a102a87e-56c7-4160-a77a-69611ef10de9
+
 
 
 ## 7. Referencias
