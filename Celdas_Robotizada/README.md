@@ -203,7 +203,10 @@ La celda está diseñada para el alistamiento de soportes adicionales en el chas
 </div>
 
 ### Video de simulación
-![Demo](https://github.com/natc27/Blue-energy-landing/blob/main/Multimedia/WeldingSim_RobotStudio.mp4)
+<video width="600" controls>
+  <source src="https://github.com/natc27/Blue-energy-landing/blob/main/Multimedia/WeldingSim_RobotStudio.mp4" type="video/mp4">
+</video>
+
 
 ## 7. Referencias
 
