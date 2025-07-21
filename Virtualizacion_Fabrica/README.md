@@ -26,6 +26,10 @@
   <img src='https://github.com/natc27/Blue-energy-landing/blob/main/Multimedia/Moto_CAD.png'>
 </div>
 
+<div align='center'>
+  <img src='https://github.com/natc27/Blue-energy-landing/blob/main/Multimedia/Moto_Partes_CAD.png'>
+</div>
+
 **Cortadora laser**
 
 <div align='center'>
