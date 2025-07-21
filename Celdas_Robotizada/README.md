@@ -20,7 +20,7 @@ La estación tiene como función principal preparar el esqueleto estructural de 
 ## 2. Hoja de ruta
 
 <div align='center'>
-  <img src='https://github.com/natc27/Blue-energy-landing/blob/main/Multimedia/FlowChart.png' width=200>
+  <img src='https://github.com/natc27/Blue-energy-landing/blob/main/Multimedia/FlowChart.png' width=600>
 </div>
 
 
@@ -33,16 +33,17 @@ La celda está diseñada para el alistamiento de soportes adicionales en el chas
   Chasis desempacado del proveedor, con suciedad superficial, pintado y sin soportes adicionales.
 
 - **Estado de salida:**  
-  Chasis limpio, con pintura intacta y con soportes colocados (tuercas remachables, pernos, etc.).
+  Chasis limpio, con pintura intacta y con soportes colocados y soldados (tuercas remachables, pernos, etc.).
 
 - **Takt Time:**  
   4.8 minutos (288 segundos), basado en un turno de 8 horas y 100 unidades/día.
 
 - **Throughput Time:**  
-  Tiempo objetivo de 5 minutos (300 segundos), con el siguiente desglose:
-  - Espera antes de entrar a la celda: 60 s  
-  - Proceso dentro de la celda: 180 s  
-  - Transporte a la siguiente estación: 60 s
+  Tiempo objetivo de 20 minutos (1200 segundos), con el siguiente desglose:
+  - Espera antes de entrar a la celda: 1 minuto
+  - Tiempo de configuración: 6 minutos  
+  - Proceso dentro de la celda: 11 minutos 
+  - Transporte a la siguiente estación: 2 minutos
 
 
 
@@ -64,6 +65,7 @@ La celda está diseñada para el alistamiento de soportes adicionales en el chas
         <ul>
           <li>Estación de limpieza por aire o cepillo rotativo</li>
           <li>Máquina de inserción de tuercas remachables o pernos</li>
+          <li>Robot soldador con efector final para soldadura con arco</li>
         </ul>
       </td>
     </tr>
@@ -71,15 +73,7 @@ La celda está diseñada para el alistamiento de soportes adicionales en el chas
       <td>Manipuladores</td>
       <td>
         <ul>
-          <li>Brazo articulado o grúa pórtico para manejo del chasis</li>
-        </ul>
-      </td>
-    </tr>
-    <tr>
-      <td>Séptimos ejes</td>
-      <td>
-        <ul>
-          <li>Mesa deslizante para posicionamiento interno del chasis</li>
+          <li>Robot ABB IRB 2600ID</li>
         </ul>
       </td>
     </tr>
@@ -87,8 +81,8 @@ La celda está diseñada para el alistamiento de soportes adicionales en el chas
       <td>Elementos de transporte</td>
       <td>
         <ul>
-          <li>Banda transportadora o AGV para entrada/salida del chasis</li>
-          <li>Pallets de sujeción para estabilizar el chasis</li>
+          <li>Banda transportadora para entrada/salida del chasis</li>
+          <li>Soportes de sujeción para estabilizar el chasis de forma vertical durante su deslizamiento</li>
         </ul>
       </td>
     </tr>
@@ -98,6 +92,8 @@ La celda está diseñada para el alistamiento de soportes adicionales en el chas
         <ul>
           <li>Panel HMI para supervisión del operador</li>
           <li>Sensores de presencia para detección del chasis</li>
+          <li>Elementos de seguridad para personas en los alrededores</li>
+          <li>Encerramiento físico y sensor de detección de apertura para detención inmediata</li>
         </ul>
       </td>
     </tr>
@@ -123,8 +119,8 @@ La celda está diseñada para el alistamiento de soportes adicionales en el chas
     </tr>
   </thead>
   <tbody>
-    <tr><td>1</td><td>Golpe del robot en movimiento</td><td>El operador puede recibir un impacto durante el funcionamiento automático.</td></tr>
-    <tr><td>2</td><td>Pinchazo o atrapamiento</td><td>Riesgo de atrapamiento entre el robot y otros elementos de la celda.</td></tr>
+    <tr><td>1</td><td>Golpe del robot en movimiento</td><td>El operador puede recibir un impacto durante el periodo de programación, enseñanza o mantenimiento.</td></tr>
+    <tr><td>2</td><td>Atrapamiento</td><td>Riesgo de atrapamiento entre el robot y otros elementos de la celda.</td></tr>
     <tr><td>3</td><td>Fallo en el sistema de parada de emergencia</td><td>La celda puede seguir funcionando en caso de emergencia.</td></tr>
     <tr><td>4</td><td>Contacto con piezas calientes</td><td>Algunas herramientas pueden calentarse durante la operación.</td></tr>
     <tr><td>5</td><td>Descarga eléctrica</td><td>Fallos en el aislamiento eléctrico o conexiones inseguras.</td></tr>
@@ -132,6 +128,7 @@ La celda está diseñada para el alistamiento de soportes adicionales en el chas
     <tr><td>7</td><td>Caída de herramientas</td><td>Herramientas mal sujetas pueden caer y causar daño.</td></tr>
     <tr><td>8</td><td>Colapso estructural o mal anclaje</td><td>Partes del sistema pueden soltarse por instalación deficiente.</td></tr>
     <tr><td>9</td><td>Ruido excesivo</td><td>El funcionamiento genera niveles de ruido superiores a lo permitido.</td></tr>
+    <tr><td>9</td><td>Exceso de vibraciones</td><td>Las vibraciones no controladas pueden afectar la calidad del producto o generar un desgaste prematuro de los elementos.</td></tr>
     <tr><td>10</td><td>Acceso no autorizado</td><td>Personas no capacitadas pueden activar el sistema accidentalmente.</td></tr>
   </tbody>
 </table>
@@ -155,7 +152,7 @@ La celda está diseñada para el alistamiento de soportes adicionales en el chas
   </thead>
   <tbody>
     <tr><td>1</td><td>Golpe del robot en movimiento</td><td>3</td><td>3</td><td>2</td><td>2</td><td>36</td></tr>
-    <tr><td>2</td><td>Pinchazo o atrapamiento</td><td>3</td><td>3</td><td>2</td><td>2</td><td>36</td></tr>
+    <tr><td>2</td><td>Atrapamiento</td><td>3</td><td>3</td><td>2</td><td>2</td><td>36</td></tr>
     <tr><td>3</td><td>Fallo parada emergencia</td><td>4</td><td>2</td><td>2</td><td>2</td><td>32</td></tr>
     <tr><td>4</td><td>Contacto con piezas calientes</td><td>2</td><td>3</td><td>2</td><td>2</td><td>24</td></tr>
     <tr><td>5</td><td>Descarga eléctrica</td><td>4</td><td>2</td><td>2</td><td>1</td><td>16</td></tr>
@@ -163,6 +160,7 @@ La celda está diseñada para el alistamiento de soportes adicionales en el chas
     <tr><td>7</td><td>Caída de herramientas</td><td>3</td><td>2</td><td>2</td><td>2</td><td>24</td></tr>
     <tr><td>8</td><td>Colapso estructural</td><td>4</td><td>1</td><td>2</td><td>1</td><td>8</td></tr>
     <tr><td>9</td><td>Ruido excesivo</td><td>2</td><td>3</td><td>2</td><td>2</td><td>24</td></tr>
+    <tr><td>9</td><td>Exceso de vibraciones</td><td>1</td><td>3</td><td>2</td><td>2</td><td>12</td></tr>
     <tr><td>10</td><td>Acceso no autorizado</td><td>3</td><td>2</td><td>2</td><td>3</td><td>36</td></tr>
   </tbody>
 </table>
