@@ -1,4 +1,4 @@
-# Módulo 3: Planeación de Proyecto
+# Módulo: Planeación de Proyecto
 
 ## Definición de Objetivos, Alcance y Restricciones
 
@@ -271,6 +271,7 @@ Para analizar los riesgos del proyecto se utilizó una matriz AMFE (Análisis Mo
 A continuación se puede observar la curva S del avance del proyecto, donde es notable que en las semanas tempranas del proyecto el avance fué más lento de lo esperado y que a partir de la semana 10 se presenta un incremento significativo en la tasa de avance, que permitió llegar al resultado obtenido en los tiempos estimados.
 
 <div align='center'>
-  <img src='Curva S.png' width=900>
+  <img src='https://github.com/user-attachments/assets/e7a47bf2-ac36-48c0-ad85-3bf3e185259f' width=900>
 </div>
+
 
