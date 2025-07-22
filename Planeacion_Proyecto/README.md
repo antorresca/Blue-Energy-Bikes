@@ -111,7 +111,9 @@ Se realizó una investigación en el mercado colombiano de movilidad urbana, enc
 
 Para analizar los riesgos del proyecto se utilizó una matriz AMFE (Análisis Modal de Fallos y Efectos), una herramienta utilizada para identificar, evaluar y priorizar los posibles fallos que pueden ocurrir en un sistema, analizando su impacto, las probabilidades de ocurrencia y la capacidad de detección. Esta matriz es útil para diseñar estrategias preventivas y correctivas que aseguren el correcto funcionamiento de la planta, minimizando riesgos y garantizando su confiabilidad.
 
-
+<div align='center'>
+  <img src='AMFE.jpg' width=900>
+</div>
 
 ## Curva de S de avance 
 
