@@ -1,4 +1,4 @@
-# Módulo 6: Virtualización de Fábrica
+# Módulo: Virtualización de Fábrica
 
 ## Modelado CAD 
 
