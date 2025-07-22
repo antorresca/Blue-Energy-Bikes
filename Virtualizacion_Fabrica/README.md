@@ -48,3 +48,45 @@ Una vez hecho el ensamble de la linea en _Autodesk Fusion_ se exportó el archiv
 
 ## Siemens NX
 
+Exportado el archivo CAD en formato STEP, se procede a importar en Siemens NX dicho archivo como se muestra en la siguiente imagen:
+
+<div align='center'>
+  <img src='https://github.com/natc27/Blue-energy-landing/blob/main/Multimedia/Linea_Produccion_NX.jpg'>
+</div>
+
+Posteriormente se configuran los cuerpos rígidos y cuerpos de colisión, es decir todo lo que va a estar en contacto y queremos simular su comportamiento, además de configurar las fuentes y sumideros de productos para ver el flujo de materiales a lo largo de la línea de producción así como configurar los transformadores para poder visualizar la transformación de las motos. Dicha configuración se ve en las siguientes imágenes:
+
+
+<div align='center'>
+  <img src='https://github.com/natc27/Blue-energy-landing/blob/main/Multimedia/Cuerpos_Colision1.jpg'>
+</div>
+<div align='center'>
+  <img src='https://github.com/natc27/Blue-energy-landing/blob/main/Multimedia/Cuerpos_Colision2.jpg'>
+</div>
+
+Después de esto, se configuraron las superficies de transporte, teniendo en cuenta que las bandas transportadoras van a ser la conexión entre las estaciones y los rodillos van a ser las estaciones como tal, cada banda transportadora y rodillos tienen 2 sensores de presencia, uno al inicio y otro al final para fines prácticos de lógica de programación. Como se muestra en las siguientes imágenes:
+
+<div align='center'>
+  <img src='https://github.com/natc27/Blue-energy-landing/blob/main/Multimedia/Superficies_Transporte.jpg'>
+</div>
+<div align='center'>
+  <img src='https://github.com/natc27/Blue-energy-landing/blob/main/Multimedia/Sensores.jpg'>
+</div>
+
+Lo siguiente que se hizo fue definir cada una de las señales que se van a utilizar en la programación en Ladder, por lo se tiene que especificar el sensor o actuador y que señal se quiere enviar al controlador:
+
+<div align='center'>
+  <img src='https://github.com/natc27/Blue-energy-landing/blob/main/Multimedia/Adaptador_Senal1.jpg'>
+</div>
+<div align='center'>
+  <img src='https://github.com/natc27/Blue-energy-landing/blob/main/Multimedia/Adaptador_Senal2.jpg'>
+</div>
+
+Después de realizar esto, se hace el paso más importante que es realizar la conexión con el servidor OPC UA, del cual se van extraer y a enviar las señales de los sensores y actuadores, teniendo en cuenta que cada señal debe tener su respectiva etiqueta en el servidor OPC UA.
+
+<div align='center'>
+  <img src='https://github.com/natc27/Blue-energy-landing/blob/main/Multimedia/Conexion_Senal1.jpg'>
+</div>
+<div align='center'>
+  <img src='https://github.com/natc27/Blue-energy-landing/blob/main/Multimedia/Conexion_Senal2.jpg'>
+</div>
