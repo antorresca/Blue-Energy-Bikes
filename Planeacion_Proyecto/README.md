@@ -7,7 +7,7 @@ El objetivo principal es desarrollar una línea de motos eléctricas innovadoras
 ## Estructura Desglosada del Trabajo (EDT)
 
 <div align='center'>
-  <img src='https://github.com/natc27/Blue-energy-landing/blob/main/Multimedia/EDT.png' width=900>
+  <img src='https://github.com/natc27/Blue-energy-landing/blob/main/Multimedia/EDT.png' width=1100>
 </div>
 
 ## Cronograma
@@ -110,6 +110,6 @@ Se realizó una investigación en el mercado colombiano de movilidad urbana, enc
 ## Curva de S de avance 
 
 <div align='center'>
-  <img src='https://github.com/natc27/Blue-energy-landing/blob/main/Multimedia/EDT.png' width=900>
+  <img src='Curva S.png' width=900>
 </div>
 
