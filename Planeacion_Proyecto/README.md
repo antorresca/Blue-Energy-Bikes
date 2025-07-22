@@ -109,6 +109,8 @@ Se realizó una investigación en el mercado colombiano de movilidad urbana, enc
 
 ## Curva de S de avance 
 
+A continuación se puede observar la curva S del avance del proyecto, donde es notable que en las semanas tempranas del proyecto el avance fué más lento de lo esperado y que a partir de la semana 10 se presenta un incremento significativo en la tasa de avance, que permitió llegar al resultado obtenido en los tiempos estimados.
+
 <div align='center'>
   <img src='Curva S.png' width=900>
 </div>
