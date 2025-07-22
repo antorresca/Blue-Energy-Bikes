@@ -1,4 +1,4 @@
-# Módulo 5: Celdas de Manufactura Robotizadas
+# Módulo: Celdas de Manufactura Robotizadas
 
 ## 1. Selección de Estación
 
@@ -209,8 +209,9 @@ Además de un constante análisis de riesgos, mantenimientos frecuentes para evi
 
 ### Video de simulación
 
-https://github.com/user-attachments/assets/a102a87e-56c7-4160-a77a-69611ef10de9
-
+<div align='center'>
+  <video src='https://github.com/user-attachments/assets/a102a87e-56c7-4160-a77a-69611ef10de9'/>
+</div>
 
 
 ## 7. Referencias
