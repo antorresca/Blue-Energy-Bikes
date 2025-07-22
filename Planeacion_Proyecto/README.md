@@ -107,6 +107,12 @@ Se realizó una investigación en el mercado colombiano de movilidad urbana, enc
   </table>
 </div>
 
+## Análisis de riesgos 
+
+Para analizar los riesgos del proyecto se utilizó una matriz AMFE (Análisis Modal de Fallos y Efectos), una herramienta utilizada para identificar, evaluar y priorizar los posibles fallos que pueden ocurrir en un sistema, analizando su impacto, las probabilidades de ocurrencia y la capacidad de detección. Esta matriz es útil para diseñar estrategias preventivas y correctivas que aseguren el correcto funcionamiento de la planta, minimizando riesgos y garantizando su confiabilidad.
+
+
+
 ## Curva de S de avance 
 
 A continuación se puede observar la curva S del avance del proyecto, donde es notable que en las semanas tempranas del proyecto el avance fué más lento de lo esperado y que a partir de la semana 10 se presenta un incremento significativo en la tasa de avance, que permitió llegar al resultado obtenido en los tiempos estimados.
