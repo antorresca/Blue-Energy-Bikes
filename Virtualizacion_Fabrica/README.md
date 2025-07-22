@@ -90,3 +90,10 @@ Después de realizar esto, se hace el paso más importante que es realizar la co
 <div align='center'>
   <img src='https://github.com/natc27/Blue-energy-landing/blob/main/Multimedia/Conexion_Senal2.jpg'>
 </div>
+
+Finalmente, en el siguiente video se puede evidenciar la integración de todos los elementos anteriormente mencionados:
+
+
+
+https://github.com/user-attachments/assets/f857ca2d-e930-41b5-a433-780a4e73ddae
+
