@@ -1,4 +1,4 @@
-# Módulo 4: Evaluación Económica de Proyecto
+# Módulo: Evaluación Económica de Proyecto
 
 Para observar las tablas completas, abrir el archivo [Desarrollo_Presupuesto.xlsx](Archivos/Desarrollo_Presupuesto.xlsx) o ir a la [pagina web](https://natc27.github.io/Blue-energy-landing/presupuesto.html)
 
