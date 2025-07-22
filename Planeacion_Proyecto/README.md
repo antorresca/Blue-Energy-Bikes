@@ -54,7 +54,7 @@ El objetivo principal es desarrollar una línea de motos eléctricas innovadoras
 ## Visualización del Cronograma (Gantt)
 
 <div align='center'>
-  <img src='https://github.com/natc27/Blue-energy-landing/blob/main/Multimedia/gantt.png' width=900>
+  <img src='https://github.com/natc27/Blue-energy-landing/blob/main/Multimedia/gantt.png' width=1300>
 </div>
 
 ## Análisis de Necesidades del Usuario y Benchmarking
