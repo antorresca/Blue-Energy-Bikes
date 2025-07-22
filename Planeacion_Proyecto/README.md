@@ -107,3 +107,9 @@ Se realizó una investigación en el mercado colombiano de movilidad urbana, enc
   </table>
 </div>
 
+## Curva de S de avance 
+
+<div align='center'>
+  <img src='https://github.com/natc27/Blue-energy-landing/blob/main/Multimedia/EDT.png' width=900>
+</div>
+
