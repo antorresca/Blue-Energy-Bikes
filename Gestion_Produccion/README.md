@@ -1,4 +1,4 @@
-# Módulo 2: Gestión de Producción
+# Módulo: Gestión de Producción
 
 ## 1. Análisis Pre-Automatización y VSM
 
