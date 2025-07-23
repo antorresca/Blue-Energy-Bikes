@@ -19,9 +19,11 @@ Los modulos se repartieron el liderazgo de la siguiente forma: -
 
 **Natalia Cely**
 
+Durante el desarrollo del proyecto asumí la construcción de la página web, el modelado de la celda robotizada, su diseño y simulación, así como el apoyo en la propuesta de mejoramiento. Fue un proceso desafiante que implicó fortalecer herramientas como HTML, CSS, y la lógica de simulación robótica. La integración de sistemas y la visualización funcional me permitieron conectar los aspectos técnicos con la comunicación efectiva del proyecto y su presentación al público.
+
 Este proyecto me permitió consolidar conocimientos anteriores en el tema de mercadeo, benchmarking, cálculos de indicadores productivos y de habilidades técnicas estrechamente relacionadas con la carrera como la simulación de rutinas en robots y las consideraciones necesarias para el correcto diseño de una celda robótica.
 
-En cuanto al trabajo en equpo, este trabajo al contar con múltiples aristas con alta demanda técnica, permitió un espacio de comunicación necesaria y colaboración para poder lograr a cabalidad los objetivos.
+En cuanto al trabajo en equipo, este trabajo al contar con múltiples aristas con alta demanda técnica, permitió un espacio de comunicación necesaria y colaboración para poder lograr a cabalidad los objetivos.
 
 **Felipe Chaves**
 
@@ -41,7 +43,7 @@ Asumí el reto de modelar el estado actual y la propuesta de mejora de las estac
 
 **Natalia Cely**
 
-Es importante realizar una planificación de proyecto al conocer o almenos tener una idea más ceñida sobre los entregables y desarrollos esperados, para poder definir tiempos razonables y aterrizados, además de hacer un monitoreo meticuloso o solo a los procesos en curso sino también a los futuros.
+Es importante realizar una planificación de proyecto al tener una idea más ceñida sobre los entregables y desarrollos esperados, para poder definir tiempos razonables y aterrizados, además de hacer un monitoreo meticuloso o solo a los procesos en curso sino también a los futuros. También es clave mantener comunicación fluida entre áreas técnicas y conceptuales para asegurar coherencia entre propuesta y ejecución.
 
 **Felipe Chaves**
 
