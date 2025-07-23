@@ -35,11 +35,13 @@ Las principales dificultades estuvieron relacionadas justamente con esos dos tem
 
 **Andres Torres**
 
+Asumí el reto de modelar el estado actual y la propuesta de mejora de las estaciones usando Plant Simulation, un software completamente nuevo para mí. Aprendí a estructurar procesos de manufactura virtual, analizar cuellos de botella y calcular el OEE. Aunque fue retador al inicio, entender el flujo productivo desde una visión sistémica fortaleció mi capacidad analítica y mi criterio técnico. Que permitió a su vez la generación de decisiones basadas en datos correctamente interpretados y se sumó la importancia de análisis de indicadores y generación de diversas alternativas para optimización considerando iteraciones y refinamientos en los mismos procesos hasta encontrar una solución suficientemente buena de acuerdo con criterios previamente definidos.
+
 ## Recomendaciones para PBL futuro
 
 **Natalia Cely**
 
-Es importante realizar una planificación de proyecto al concoer o almenos tener una idea más ceñida sobre los entregables y desarrollos esperados, para poder definir tiempos razonables y aterrizados, además de hacer un monitoreo meticuloso o solo a los procesos en curso sino también a los futuros.
+Es importante realizar una planificación de proyecto al conocer o almenos tener una idea más ceñida sobre los entregables y desarrollos esperados, para poder definir tiempos razonables y aterrizados, además de hacer un monitoreo meticuloso o solo a los procesos en curso sino también a los futuros.
 
 **Felipe Chaves**
 
@@ -48,3 +50,7 @@ Como recomendación, sería muy importante planificar mejor cada una de las acti
 **Marco Quimbay**
 
 Una de las principales recomendaciones para futuros proyectos sería planificar con más detalle las actividades relacionadas con la simulación de planta y la parte de automatización desde el inicio. En nuestro caso, nos concentramos primero en otros entregables y dejamos para después temas como la construcción del modelo en RobotStudio o el análisis del OEE con el simulador. Esto generó presión de tiempo y limitó el espacio para explorar mejor aspectos como el módulo de MES, el de SCADA y el de Industria 4.0.
+
+**Andres Torres**
+
+Recomiendo comenzar la exploración de software como Plant Simulation desde las primeras semanas, pues su curva de aprendizaje puede ser alta. Es clave definir métricas desde el inicio (como OEE o tiempos de ciclo) y fomentar espacios constantes de validación grupal. Además, dividir responsabilidades según fortalezas acelera el avance sin perder integración del proyecto.
